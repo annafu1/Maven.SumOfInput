@@ -9,12 +9,17 @@ public class Main {
         Scanner number = new Scanner(System.in);
         System.out.println("Please enter a number: ");
         Integer n = Integer.parseInt(number.nextLine());
-        System.out.println( 1 + n);
+        Integer totalSum = 1 + n;
+        System.out.println("The sum of 1 to " + n + " is " + totalSum);
 
     }
     
     int sumOfNumbers(int n) {
-        return n;
+        Integer number = 0;
+        for (int i = 0; i <= n; i++) {
+            number++;
+        }
+        return number;
     }
     // for Extra Credit
     int gaussianSumOfNumbers(int n) {
