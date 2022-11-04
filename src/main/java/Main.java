@@ -9,15 +9,14 @@ public class Main {
         Scanner number = new Scanner(System.in);
         System.out.println("Please enter a number: ");
         Integer n = Integer.parseInt(number.nextLine());
-        Integer totalSum = 1 + n;
-        System.out.println("The sum of 1 to " + n + " is " + totalSum);
+        System.out.println("The sum of 1 to " + n  + " is " + sumOfNumbers(n));
 
     }
     
-    int sumOfNumbers(int n) {
+    public static int sumOfNumbers(int n) {
         Integer number = 0;
         for (int i = 0; i <= n; i++) {
-            number++;
+            number+= i;
         }
         return number;
     }
